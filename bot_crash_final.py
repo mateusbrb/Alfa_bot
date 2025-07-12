@@ -24,7 +24,7 @@ def detectar_padrao():
         sinais_enviados.append((datetime.now().strftime("%H:%M"), alvo, sucesso))
         historico_resultados.append(sucesso)
         resultado_texto = "✅ Sucesso" if sucesso else "❌ Erro"
-        msg = f"🔥 ALFA_BOT PREMIUM: Entrada sugerida ➤ Crash acima de {}x\n🎯 Resultado: {}".format(alvo, resultado_texto)
+        msg = f"🔥 ALFA_BOT PREMIUM: Entrada sugerida ➤ Crash acima de {alvo}x\n🎯 Resultado: {resultado_texto}"
         bot.send_message(chat_id=CHAT_ID, text=msg)
 
 # === Envio de histórico a cada 1 hora ===
