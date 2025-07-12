@@ -1,0 +1,4 @@
+websocket-client
+requests
+python-telegram-bot
+schedule
